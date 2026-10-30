@@ -1,0 +1,18 @@
+Explorando os OMGT'S - FHO (Faculdade Hermínio Ometto) - Ciências Biológicas
+
+ESTRUTURA
+  index.html        página única com 5 abas (Início, O que são OMGTs, Mitos e realidades, Quem somos, Contato)
+  assets/style.css  todo o CSS do site (sem Tailwind CDN, pronto para produção)
+  assets/main.js    navegação por abas, cartões de mitos, equipe e animação do DNA
+
+COMO TESTAR
+  Dê duplo clique em index.html.
+
+COMO COLOCAR NO AR
+  Envie a pasta inteira (mantendo index.html na raiz e a pasta assets) para uma hospedagem de
+  sites estáticos, como GitHub Pages, Netlify ou Vercel. Não há servidor nem build.
+
+OBSERVAÇÕES
+  - As fontes (Fraunces e Instrument Sans) vêm do Google Fonts; se não carregarem, o site usa
+    fontes padrão do sistema automaticamente.
+  - Instagram do projeto: https://www.instagram.com/explorando_omgt/

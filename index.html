@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Projeto de extensão da FHO (Ciências Biológicas) que explica o que são alimentos transgênicos, desmistifica boatos e apresenta a ciência por trás dos OMGTs.">
+<meta name="theme-color" content="#2a8048">
+<meta property="og:title" content="Explorando os OMGT’S">
+<meta property="og:description" content="Ciência acessível sobre alimentos transgênicos: o que são, como são produzidos e quais são os mitos e as realidades.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%B1%3C/text%3E%3C/svg%3E">
+<title>Explorando os OMGT’S | FHO – Ciências Biológicas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="sticky z-20 backdrop-blur" style="top:env(safe-area-inset-top,0px);background:color-mix(in srgb,var(--bg) 88%,transparent);border-bottom:1px solid var(--line)">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
+    <a href="#home" class="serif text-lg font-bold flex items-center gap-2" style="color:var(--brand)">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 21c0-9 5-15 15-16-1 10-6 15-15 16z"/><path d="M5 21c3-5 6-8 10-10"/></svg>
+      Explorando os OMGT’S
+    </a>
+    <nav id="nav" class="hidden md:flex items-center gap-1 text-sm" aria-label="Navegação principal">
+      <a class="nav-link" data-p="home" href="#home">Início</a>
+      <a class="nav-link" data-p="o-que-sao" href="#o-que-sao">O que são OMGTs</a>
+      <a class="nav-link" data-p="mitos" href="#mitos">Mitos e realidades</a>
+      <a class="nav-link" data-p="quem-somos" href="#quem-somos">Quem somos</a>
+      <a class="nav-link" data-p="contato" href="#contato">Contato</a>
+    </nav>
+    <button id="menuBtn" class="md:hidden p-2 rounded-lg surface" aria-label="Abrir menu" aria-expanded="false">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+  <nav id="mobileNav" class="hidden md:hidden px-4 pb-3 flex-col gap-1 text-sm" aria-label="Menu móvel">
+    <a class="nav-link block" data-p="home" href="#home">Início</a>
+    <a class="nav-link block" data-p="o-que-sao" href="#o-que-sao">O que são OMGTs</a>
+    <a class="nav-link block" data-p="mitos" href="#mitos">Mitos e realidades</a>
+    <a class="nav-link block" data-p="quem-somos" href="#quem-somos">Quem somos</a>
+    <a class="nav-link block" data-p="contato" href="#contato">Contato</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- HOME -->
+<section id="home" class="page">
+  <div class="hero">
+    <div class="max-w-6xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <p class="muted2 font-medium mb-4">Projeto de extensão · FHO · Ciências Biológicas</p>
+        <h1 class="text-4xl md:text-6xl font-bold">O que está no seu prato passou por décadas de ciência.</h1>
+        <p class="muted2 mt-6 text-lg max-w-xl">Explorando os OMGT’S traduz a biotecnologia dos alimentos transgênicos para quem come, planta e compra: o que são, como surgem e o que a ciência já comprovou.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a class="btn" href="https://www.instagram.com/explorando_omgt/" target="_blank" rel="noopener noreferrer">Conheça o @explorando_omgt no Instagram</a>
+          <a class="btn btn-ghost" href="#o-que-sao">Começar a explorar</a>
+        </div>
+      </div>
+      <svg id="helix" class="w-full max-w-sm mx-auto" viewBox="0 0 300 420" aria-label="Molécula de DNA em dupla hélice girando" role="img"><defs><radialGradient id="glow"><stop offset="0" stop-color="#d4eccd"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient></defs><circle cx="150" cy="210" r="200" fill="url(#glow)"/></svg>
+    </div>
+  </div>
+
+  <div class="max-w-6xl mx-auto px-4 py-14">
+    <h2 class="text-3xl md:text-4xl font-bold max-w-2xl">Um tema que chega à mesa de todo mundo</h2>
+    <p class="muted mt-4 max-w-3xl text-lg">Soja, milho e algodão geneticamente modificados ocupam a maior parte da área plantada dessas culturas no Brasil, e seus derivados estão em óleos, rações e alimentos processados. Mesmo assim, o assunto é cercado de boatos, medo e desinformação.</p>
+    <div class="grid md:grid-cols-3 gap-5 mt-8">
+      <article class="surface rounded-2xl p-6">
+        <h3 class="text-xl font-bold">Saúde</h3>
+        <p class="muted mt-2">Cada OGM aprovado passa por testes de toxicidade e alergenicidade antes de chegar ao mercado. Entender esse processo ajuda a separar medo de evidência.</p>
+      </article>
+      <article class="surface rounded-2xl p-6">
+        <h3 class="text-xl font-bold">Meio ambiente</h3>
+        <p class="muted mt-2">Há plantas que reduzem o uso de inseticidas e outras que exigem manejo cuidadoso de herbicidas. O impacto depende da característica inserida e de como ela é usada.</p>
+      </article>
+      <article class="surface rounded-2xl p-6">
+        <h3 class="text-xl font-bold">Sociedade</h3>
+        <p class="muted mt-2">Produtividade, segurança alimentar, patentes e rotulagem são debates reais. Informação de qualidade permite que cada pessoa participe deles com base em fatos.</p>
+      </article>
+    </div>
+    <div class="soft rounded-2xl p-8 mt-10 flex flex-col md:flex-row md:items-center justify-between gap-5">
+      <div>
+        <h3 class="text-2xl font-bold">Ciência em pílulas, todos os dias</h3>
+        <p class="muted mt-1">No Instagram, publicamos posts curtos, ilustrados e feitos para quem não é da área.</p>
+      </div>
+      <a class="btn shrink-0" href="https://www.instagram.com/explorando_omgt/" target="_blank" rel="noopener noreferrer">Seguir @explorando_omgt</a>
+    </div>
+  </div>
+</section>
+
+<!-- O QUE SÃO -->
+<section id="o-que-sao" class="page">
+  <div class="max-w-4xl mx-auto px-4 py-14">
+    <h1 class="text-4xl md:text-5xl font-bold">O que são os OMGTs?</h1>
+    <p class="muted mt-5 text-lg">Um Organismo Geneticamente Modificado (OGM) é um ser vivo, como planta, animal ou microrganismo, cujo material genético foi alterado por técnicas de engenharia genética. Quando o gene inserido vem de outra espécie, o organismo é chamado de <strong style="color:var(--ink)">transgênico</strong>. Alimentos feitos a partir deles são conhecidos como alimentos transgênicos.</p>
+
+    <h2 class="text-2xl md:text-3xl font-bold mt-12">A base biológica</h2>
+    <p class="muted mt-3">Todo ser vivo usa o mesmo “alfabeto” genético: sequências de DNA que codificam proteínas. Uma proteína que protege uma bactéria de insetos, por exemplo, pode funcionar também dentro de uma planta se o gene correspondente for transferido e ativado. É o que acontece no milho Bt, que recebeu um gene da bactéria <em>Bacillus thuringiensis</em> e produz uma proteína tóxica a certas lagartas-praga, mas inofensiva a mamíferos.</p>
+
+    <h2 class="text-2xl md:text-3xl font-bold mt-12">Como um transgênico é produzido</h2>
+    <ol class="mt-6 space-y-4">
+      <li class="surface rounded-2xl p-5 flex gap-4"><span class="serif text-3xl font-bold" style="color:var(--brand)">1</span><div><h3 class="font-bold text-lg">Identificação do gene de interesse</h3><p class="muted">Pesquisadores localizam o gene responsável pela característica desejada, como resistência a uma praga ou a um vírus.</p></div></li>
+      <li class="surface rounded-2xl p-5 flex gap-4"><span class="serif text-3xl font-bold" style="color:var(--brand)">2</span><div><h3 class="font-bold text-lg">Isolamento e construção genética</h3><p class="muted">O gene é cortado com enzimas de restrição e montado em um vetor, geralmente um plasmídeo, junto a sequências que controlam quando e onde ele será ativado.</p></div></li>
+      <li class="surface rounded-2xl p-5 flex gap-4"><span class="serif text-3xl font-bold" style="color:var(--brand)">3</span><div><h3 class="font-bold text-lg">Transferência para a planta</h3><p class="muted">Duas rotas são comuns: a bactéria <em>Agrobacterium tumefaciens</em>, que naturalmente transfere DNA a plantas, e a biobalística, que dispara micropartículas revestidas com o DNA.</p></div></li>
+      <li class="surface rounded-2xl p-5 flex gap-4"><span class="serif text-3xl font-bold" style="color:var(--brand)">4</span><div><h3 class="font-bold text-lg">Seleção e regeneração</h3><p class="muted">Células que incorporaram o gene são selecionadas e, por cultura de tecidos, regeneradas em plantas completas.</p></div></li>
+      <li class="surface rounded-2xl p-5 flex gap-4"><span class="serif text-3xl font-bold" style="color:var(--brand)">5</span><div><h3 class="font-bold text-lg">Testes e aprovação</h3><p class="muted">Seguem anos de ensaios em laboratório e campo. No Brasil, a CTNBio avalia a biossegurança conforme a Lei de Biossegurança (Lei nº 11.105/2005), e outros órgãos regulam registro e comercialização.</p></div></li>
+    </ol>
+
+    <h2 class="text-2xl md:text-3xl font-bold mt-12">Exemplos de características</h2>
+    <div class="grid sm:grid-cols-2 gap-4 mt-5">
+      <div class="soft rounded-2xl p-5"><h3 class="font-bold">Resistência a insetos</h3><p class="muted text-sm mt-1">Milho e algodão Bt, que reduzem a necessidade de aplicar inseticidas contra certas pragas.</p></div>
+      <div class="soft rounded-2xl p-5"><h3 class="font-bold">Tolerância a herbicidas</h3><p class="muted text-sm mt-1">Soja que tolera determinados herbicidas, facilitando o controle de plantas daninhas.</p></div>
+      <div class="soft rounded-2xl p-5"><h3 class="font-bold">Resistência a vírus</h3><p class="muted text-sm mt-1">Mamão papaia no Havaí e feijão desenvolvido pela Embrapa contra o mosaico dourado.</p></div>
+      <div class="soft rounded-2xl p-5"><h3 class="font-bold">Melhoria nutricional</h3><p class="muted text-sm mt-1">Pesquisas como o “arroz dourado”, enriquecido com precursor de vitamina A.</p></div>
+    </div>
+    <p class="muted mt-8 text-sm">Nota: técnicas mais recentes de edição genômica, como o CRISPR, alteram o DNA da própria espécie sem necessariamente inserir genes de outra, e têm regras próprias de avaliação.</p>
+  </div>
+</section>
+
+<!-- MITOS -->
+<section id="mitos" class="page">
+  <div class="max-w-5xl mx-auto px-4 py-14">
+    <h1 class="text-4xl md:text-5xl font-bold">Mitos e realidades</h1>
+    <p class="muted mt-4 text-lg max-w-3xl">Toque em cada cartão para ver o que a ciência diz sobre o boato.</p>
+    <div id="mythGrid" class="grid md:grid-cols-2 gap-5 mt-8"></div>
+    <div class="flex gap-3 mt-6">
+      <button id="openAll" class="btn btn-ghost text-sm">Mostrar todas as respostas</button>
+      <button id="closeAll" class="btn btn-ghost text-sm">Ocultar todas</button>
+    </div>
+    <p class="muted text-sm mt-8">Resumo baseado em avaliações de órgãos como a CTNBio, a Organização Mundial da Saúde, a EFSA e as Academias Nacionais de Ciências dos EUA. Consulte sempre fontes oficiais atualizadas.</p>
+  </div>
+</section>
+
+<!-- QUEM SOMOS -->
+<section id="quem-somos" class="page">
+  <div class="max-w-5xl mx-auto px-4 py-14">
+    <h1 class="text-4xl md:text-5xl font-bold">Quem somos</h1>
+    <p class="muted mt-5 text-lg max-w-3xl">Somos estudantes do curso de <strong style="color:var(--ink)">Ciências Biológicas</strong> da <strong style="color:var(--ink)">FHO (Faculdade Hermínio Ometto)</strong>. O projeto Explorando os OMGT’S nasceu da vontade de levar o conhecimento da universidade para fora da sala de aula, com linguagem clara e fontes confiáveis.</p>
+    <div class="grid sm:grid-cols-2 gap-5 mt-10" id="team"></div>
+    <div class="soft rounded-2xl p-8 mt-10">
+      <h2 class="text-2xl font-bold">Nossa proposta</h2>
+      <p class="muted mt-3">Divulgar informação científica sobre alimentos transgênicos, desmistificar boatos e estimular o pensamento crítico. Não defendemos nem condenamos a tecnologia: mostramos como ela funciona, o que já foi estudado e quais debates seguem abertos.</p>
+      <a class="btn mt-5" href="https://www.instagram.com/explorando_omgt/" target="_blank" rel="noopener noreferrer">Acompanhe o projeto no Instagram</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="page">
+  <div class="max-w-5xl mx-auto px-4 py-14 grid md:grid-cols-2 gap-10">
+    <div>
+      <h1 class="text-4xl md:text-5xl font-bold">Fale com a gente</h1>
+      <p class="muted mt-5 text-lg">Tem uma dúvida, uma sugestão de tema ou ouviu algum boato que quer ver checado? Nos procure no Instagram: é por lá que respondemos mensagens e recebemos sugestões.</p>
+      <a class="surface rounded-2xl p-5 mt-8 flex items-center gap-4 block" href="https://www.instagram.com/explorando_omgt/" target="_blank" rel="noopener noreferrer">
+        <span class="rounded-xl p-3 soft" style="color:var(--brand)"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></svg></span>
+        <span><span class="font-bold block">@explorando_omgt</span><span class="muted text-sm">Abrir o perfil no Instagram</span></span>
+      </a>
+    </div>
+    <div class="soft rounded-2xl p-7">
+      <h2 class="text-2xl font-bold">Como participar</h2>
+      <ul class="mt-4 space-y-3 muted">
+        <li><strong style="color:var(--ink)">Mande um boato para checarmos.</strong> Ouviu algo sobre transgênicos? Envie por mensagem direta.</li>
+        <li><strong style="color:var(--ink)">Comente nos posts.</strong> Suas dúvidas viram temas dos próximos conteúdos.</li>
+        <li><strong style="color:var(--ink)">Compartilhe.</strong> Marque quem ainda acredita em mitos sobre alimentos.</li>
+      </ul>
+      <a class="btn mt-6" href="https://www.instagram.com/explorando_omgt/" target="_blank" rel="noopener noreferrer">Ir para o Instagram</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer style="border-top:1px solid var(--line)">
+  <div class="max-w-6xl mx-auto px-4 py-8 text-sm muted flex flex-col md:flex-row justify-between gap-3">
+    <p>Explorando os OMGT’S · FHO – Faculdade Hermínio Ometto · Ciências Biológicas</p>
+    <a class="underline" href="https://www.instagram.com/explorando_omgt/" target="_blank" rel="noopener noreferrer">Instagram @explorando_omgt</a>
+  </div>
+</footer>
+
+<script src="assets/main.js" defer></script>
+</body>
+</html>
